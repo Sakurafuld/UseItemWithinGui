@@ -1,0 +1,5 @@
+{
+  "hint.useitemwithingui.first": "Ctrl+右クリックでGuiからアイテムを使う",
+  "hint.useitemwithingui.shift": "+Shift: スニークしているものとして使う",
+  "hint.useitemwithingui.alt": "+Alt: 使用後のアイテムを手に置く"
+}

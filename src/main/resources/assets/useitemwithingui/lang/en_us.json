@@ -1,0 +1,5 @@
+{
+  "hint.useitemwithingui.first": "Ctrl+RMB to use an item from the Gui",
+  "hint.useitemwithingui.shift": "+Shift to use as if you were sneaking",
+  "hint.useitemwithingui.alt": "+Alt to place used items in your hand"
+}
