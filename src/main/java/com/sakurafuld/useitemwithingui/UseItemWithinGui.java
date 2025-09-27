@@ -1,6 +1,7 @@
 package com.sakurafuld.useitemwithingui;
 
 import com.mojang.blaze3d.platform.InputConstants;
+import com.mojang.logging.LogUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
@@ -22,18 +23,15 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.event.RenderTooltipEvent;
 import net.neoforged.neoforge.client.event.ScreenEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import org.joml.Vector2ic;
 import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
-
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.ModContainer;
 
 import java.util.OptionalInt;
 
@@ -248,7 +246,7 @@ public class UseItemWithinGui {
         }
         this.tipped = Util.getMillis();
         this.tipHeight = event.getComponents().size() == 1 ? -2 : 0;
-        for(ClientTooltipComponent component : event.getComponents()) {
+        for (ClientTooltipComponent component : event.getComponents()) {
             this.tipHeight += component.getHeight();
         }
     }
