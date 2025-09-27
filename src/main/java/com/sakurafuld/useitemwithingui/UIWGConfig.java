@@ -20,7 +20,7 @@ public class UIWGConfig {
                 .comment("Show operation hints on the Gui")
                 .define("showHint", true);
         PRESS_OUTSIDE_TO_USE = builder
-                .comment("Press Ctrl+RMB outside the Gui to use the item in your hand")
+                .comment("Press Ctrl+RMB outside slots to use the item in your hand")
                 .define("pressOutsideToUse", true);
 
         builder.pop();
