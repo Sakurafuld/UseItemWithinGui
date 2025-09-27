@@ -136,7 +136,7 @@ public class UseItemWithinGui {
     @OnlyIn(Dist.CLIENT)
     private boolean handleCreative(LocalPlayer player, CreativeModeInventoryScreen screen) {
         Slot hovered = screen.getSlotUnderMouse();
-        
+
         if (hovered == null) {
             if (UIWGConfig.PRESS_OUTSIDE_TO_USE.get()) {
                 this.useItem(player);
@@ -254,7 +254,7 @@ public class UseItemWithinGui {
         }
         this.tipped = Util.getMillis();
         this.tipHeight = event.getComponents().size() == 1 ? -2 : 0;
-        for(ClientTooltipComponent component : event.getComponents()) {
+        for (ClientTooltipComponent component : event.getComponents()) {
             this.tipHeight += component.getHeight();
         }
     }
