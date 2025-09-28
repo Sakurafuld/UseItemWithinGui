@@ -97,14 +97,6 @@ dependencies {
     implementation fg.deobf("curse.maven:sophisticated-backpacks-422301:7008542")
 }
 
-//mixin {
-//    add sourceSets.main, 'fundustry.refmap.json'
-//    config 'fundustry.mixins.json'
-//
-//    debug.verbose = true
-//    debug.export = true
-//}
-
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
             minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
